@@ -8,7 +8,7 @@ const subresult = document.getElementById("subresult");
 const cardresult = document.getElementById("cardresult");
 const btn = document.getElementById("btn");
 
-console.log("you are here")
+//console.log("you are here")
 btn.onclick = function()
 {
     if(checkbox.checked)
@@ -37,3 +37,5 @@ btn.onclick = function()
         cardresult.textContent=`You Are not Paying`
     }
 }
+
+
