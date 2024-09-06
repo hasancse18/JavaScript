@@ -1,0 +1,23 @@
+.myButton{
+    font-size: 2rem;
+    margin: 10px;
+    border: none;
+    border-radius:10px ;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.hover{
+    box-shadow: 0 0 10px hsla(0,0%,0%,0.2);
+    font-weight: bold;
+}
+
+.enabled{
+    background-color: hsla(204,100%,50%);
+    color: white;
+}
+
+.disabled{
+    background-color: hsl(0,0%,60%);
+    color: hsl(0,0%,80%);
+}
