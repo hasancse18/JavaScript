@@ -29,8 +29,17 @@ function takeOutTrash()
     
 }
 
-walkDog().then((value)=>{ console.log(value); return cleanKitchen()} )
-         .then((value)=>{ console.log(value); return takeOutTrash()})
-         .then((value)=>{ console.log(value); console.log("You are Finished")})
-         
+// walkDog().then((value)=>{ console.log(value); return cleanKitchen()} )
+//          .then((value)=>{ console.log(value); return takeOutTrash()})
+//          .then((value)=>{ console.log(value); console.log("You are Finished")});
+
+ //using async/await
+ //Using async/await there is no need to method chaining//
+ async function runAll() {
+    console.log(await walkDog()) ;
+    console.log(await cleanKitchen());
+    console.log(await takeOutTrash());
+ }
+
+ runAll();
             
